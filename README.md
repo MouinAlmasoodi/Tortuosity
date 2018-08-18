@@ -6,7 +6,9 @@ openFOAM needs to be installed first. This work is developed under OpenFOAM-v170
 More information regarding openFOAM can be found on https://openfoam.com/releases  
 
 Paraview needs to be also installed to visualize tortuosity data  
-More information about ParaView can be found here https://www.paraview.org/  
+More information about ParaView can be found here https://www.paraview.org/ 
+
+The shale sample used in the analysis is available on request. 
 
 #  Files Description
 **U and P**: include boundary condition assumptions and values for pressure and velocity. 
