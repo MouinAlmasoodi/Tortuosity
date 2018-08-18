@@ -12,7 +12,7 @@ More information regarding openFOAM can be found on https://openfoam.com/release
 
 **snappyHexMeshDict**: includes the pore geometry refinement parameters and mesh quailty control.
 
-**controlDict**:includes custom functions to compute pressure differential between inlet and outlet for permeability calculations (Region 1 represents the inlet surface integration function, whereas Region 2 represents the outlet surface integration function). Additionally, the file includes function to calculate the velocity volume average within the pore geometry at each time step.
+**controlDict**: includes custom functions to compute pressure differential between inlet and outlet for permeability calculations (Region 1 represents the inlet surface integration function, whereas Region 2 represents the outlet surface integration function). Additionally, the file includes function to calculate the velocity volume average within the pore geometry at each time step.
 
 **fvSolution and fvSchemes**: include solvers parameters and discretization schemes respectively.
 
