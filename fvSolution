@@ -1,0 +1,96 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.7.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    p
+    {
+        solver          GAMG;
+        smoother        DIC;
+        tolerance       1e-6;
+        relTol          0.05;
+    }
+
+    "(U|sigma)"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0.1;
+    }
+
+    pFinal
+    {
+        $p;
+		smoother        DIC;
+        tolerance       1e-6;
+        relTol          0;
+    }
+
+    "(U|sigma)Final"
+    {
+        $U;
+		solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0;
+    }
+}
+
+PIMPLE
+{
+    momentumPredictor   off;
+    nOuterCorrectors    50;
+    nCorrectors         2;
+    nNonOrthogonalCorrectors 2;
+    turbOnFinalIterOnly no;
+	residualControl
+     {
+         "(U|p)"
+         {
+             relTol          0;
+             // Could be lower if necessary, should not be lower than
+             // tolerance in linear solvers (or convergence criteria
+             // will never be satisfied)
+             tolerance       1e-4;
+         }
+    }
+
+}
+
+potentialFlow
+{
+    nNonOrthogonalCorrectors 5;
+}
+
+relaxationFactors
+{
+    equations
+    {
+        ".*"   1;
+    }
+}
+
+
+
+// ************************************************************************* //
+
+
+
+
+
+
