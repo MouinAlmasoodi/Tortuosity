@@ -16,9 +16,9 @@ More information regarding openFOAM can be found on https://openfoam.com/release
 
 **fvSolution and fvSchemes**: include solvers parameters and discretization schemes respectively.
 
-**Tortuosity_Results**: includes simulated tortuosity data.
+**Tortuosity_Results**: includes simulated tortuosity data within the shale sample pore geometry.
 
-**PDF Modeling**: R script for modeling probability density functions. 
+**PDF Modeling**: R script for modeling probability density functions. Also it includes plotting functions for figures used in the manuscript.  
 
 **transportProperties**: includes viscosity specification.    
 
