@@ -1,1 +1,1 @@
-# Streamlines-Based Approach to Compute Tortuosity from 3D FIB-SEM Images. 
+#  Tortuosity and Transient Permeability Computations from 3D FIB-SEM Images. 
