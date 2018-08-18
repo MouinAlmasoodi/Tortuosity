@@ -4,6 +4,7 @@ Streamlines-based approach is developed to compute tortuosity based on three-dim
 #  Getting Started
 openFOAM needs to be installed first. This work is developed under OpenFOAM-v1706.  
 More information regarding openFOAM can be found on https://openfoam.com/releases  
+
 Paraview needs to be also installed to visualize tortuosity data  
 More information about ParaView can be found here https://www.paraview.org/  
 
