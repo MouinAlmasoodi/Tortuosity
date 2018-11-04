@@ -1,7 +1,7 @@
 #Data loading
 
 library(readxl)
-data <- read_excel("E:/MarcellusVolume/WD/MP_MTry_PotentialFoam_StreamFunction_REV/Tortuosity_Results.xlsx")
+data <- read_excel(" ")
 View(data)
 summary(data)
 
