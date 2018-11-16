@@ -1,4 +1,4 @@
-#  Tortuosity and Transient Permeability Computations from 3D FIB-SEM Images. 
+#  Finite Volume Computations of Shale Tortuosity and Permeability from 3-D Pore Networks Extracted from Scanning Electron Tomographic Images
 Streamlines-based approach is developed to compute tortuosity based on three-dimensional pore geometry constructed from FIB-SEM images. Also, permeability was calculated based on transient simulation with varying mesh sizes. 
 
 #  Getting Started
