@@ -30,4 +30,20 @@ The shale sample used in the analysis is available on request.
 
 
 # Abstract
-Abstract Recent advancements in computational geosciences and pore-scale imaging have made it possible to extract realistic three-dimensional pore geometries from tight rock samples such as shale. This study presents a viable mean to determine elusive transport properties of tight reservoirs using techniques from Computational Fluid Dynamics (CFD). We present novel numerical procedure to compute hydraulic tortuosity in a complex 3D pore system imaged by Focused Ion Beam Scanning Electron Microscope (FIB-SEM). The effectiveness of the procedure is demonstrated on a pore network that was extracted from a shale reservoir in the United States. Results suggest log-normal distribution of tortuosity with an average of 1.8 which illustrate the highly convoluted pathways of fluid diffusion through shale reservoirs. In order to investigate the size of permeability Representative Elementary Volume (REV), permeability was computed at 10 sub-volumes of the original shale sample to evaluate permeability dependence on the sample size by considering transient incompressible Newtonian fluid. Findings suggest that a shale sample of 7.44 cubic micron is insufficient to reach permeability REV. Additionally, while solving the governing equations numerically, it is critical to ensure that the chosen mesh size and discretization schemes yield consistent, accurate, and stable solutions. Thus, mesh density sensitivities were carried out for the first time on a shale sample to examine the reliability of using 3D pore networks extracted from FIB-SEM stacks. 
+Recent advancements in computational geosciences and pore-scale imaging have
+made it possible to extract three-dimensional pore geometries from tight rock samples
+such as shale. This study presents a viable mean to determine elusive transport
+properties of tight reservoirs using techniques from Computational Fluid Dynamics
+(CFD). We present novel numerical procedure to compute hydraulic tortuosity in a
+complex 3D pore system imaged by Focused Ion Beam Scanning Electron Microscope
+(FIB-SEM). The effectiveness of the procedure is demonstrated on a pore network that
+was extracted from a shale reservoir in the United States. Results suggest log-normal
+distribution of tortuosity with an average of 1.8 which illustrate the highly convoluted
+pathways of fluid diffusion through shale reservoirs. Additionally, permeability was
+computed at 10 sub-volumes of the original shale sample to investigate the size of
+permeability Representative Elementary Volume (REV). Permeability computations
+were conducted using finite volume method and under the consideration of transient
+incompressible Newtonian fluid. Findings reveal that a shale sample of 7.44 cubic
+micron is insufficient to reach permeability REV. Lastly, we carried out mesh density
+sensitivities, for the first time on a shale sample, to examine the reliability of using 3D
+pore networks extracted from FIB-SEM stacks.
